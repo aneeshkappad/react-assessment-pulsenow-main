@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    @apply text-3xl font-bold tracking-tight;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold tracking-tight;
+  }
+
+  h3 {
+    @apply text-xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    @apply text-lg font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  /* Typography utilities for financial data */
+  .font-number {
+    @apply font-mono;
+  }
+
+  .text-label {
+    @apply text-xs font-medium uppercase tracking-wider text-gray-500;
+  }
+
+  .text-price {
+    @apply font-mono font-bold;
+  }
+
+  .text-percentage {
+    @apply font-mono font-semibold;
+  }
+
+  .text-heading {
+    @apply font-semibold text-gray-900;
+  }
+
+  .text-body {
+    @apply font-normal text-gray-700;
+  }
+}
